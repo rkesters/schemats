@@ -20,6 +20,7 @@ interface SchematsConfig {
     sqlite3?: boolean
     skipTables?: string[] | string
     customTypes?: object
+    customTypeTransform?: object
     customHeader?: string
     prettier?: boolean
     prettierConfig?: any
@@ -62,6 +63,7 @@ let argv: SchematsConfig = yargs
     .describe('sqlite3', 'For sqlite3 dbs')
     .describe('skipTables', 'tables to skip')
     .describe('customTypes', 'Mapping of custom types for a table column')
+    .describe('customTypeTransform', 'Mapping of custom types for a database column type')
     .describe('customHeader', 'Custom header to prefix the output file')
     .help('h')
     .alias('h', 'help').argv
@@ -84,6 +86,7 @@ let argv: SchematsConfig = yargs
                 prettierConfig: argv.prettierConfig,
                 customHeader: argv.customHeader,
                 customTypes: argv.customTypes,
+                customTypeTransform: argv.customTypeTransform,
                 camelCase: argv.camelCase,
                 writeHeader: !argv.noHeader,
                 tableNamespaces: Boolean(argv.tableNamespaces),
