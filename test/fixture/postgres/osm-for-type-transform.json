@@ -17,5 +17,6 @@
   },
   "customTypeTransform": {
 	  "uuid": "uuid"
-  }
+  },
+  "customHeader": "/* tslint:disable */\nexport type uuid = string"
 }

@@ -1,5 +1,5 @@
 /* tslint:disable */
-
+export type uuid = string
 export type FormatEnum = 'html' | 'markdown' | 'text'
 export type UserStatusEnum =
     | 'active'
