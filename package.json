@@ -1,6 +1,6 @@
 {
     "name": "@rkesters/schemats",
-    "version": "7.0.0",
+    "version": "7.0.1",
     "description": "Fork of schemats - Generate typescript interface definitions from (postgres) SQL database schema",
     "keywords": [
         "postgres",
@@ -24,17 +24,18 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/sweetiq/schemats.git"
+        "url": "https://github.com/rkesters/schemats.git"
     },
     "bugs": {
-        "url": "https://github.com/sweetiq/schemats/issues"
+        "url": "https://github.com/rkesters/schemats/issues"
     },
     "author": "Mengxuan Xia <xiamx2004@gmail.com>",
     "contributors": [
         "Tim Griesser <tgriesser@gmail.com>",
         "Arnaud Benhamdine <arnaud.benhamdine@gmail.com>",
         "zigomir <zigomir@gmail.com>",
-        "Mark Crisp <macr1324@gmail.com>"
+        "Mark Crisp <macr1324@gmail.com>",
+		"Robert Kesterson <rkesters@gmail.com>"
     ],
     "license": "MIT",
     "devDependencies": {
@@ -74,7 +75,7 @@
     "dependencies": {
         "bluebird": "^3.5.0",
         "diff": "^3.2.0",
-        "lodash": "^4.17.4",
+        "lodash": "^4.17.15",
         "mz": "^2.7.0",
         "typescript": "^4.1.3",
         "yargs": "^16.2.0"
